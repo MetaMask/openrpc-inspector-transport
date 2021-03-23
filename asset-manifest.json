@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/openrpc-inspector-transport/static/js/main.f7606323.chunk.js",
+    "main.js.map": "/openrpc-inspector-transport/static/js/main.f7606323.chunk.js.map",
+    "runtime-main.js": "/openrpc-inspector-transport/static/js/runtime-main.8acb2dc8.js",
+    "runtime-main.js.map": "/openrpc-inspector-transport/static/js/runtime-main.8acb2dc8.js.map",
+    "static/js/2.3a65063f.chunk.js": "/openrpc-inspector-transport/static/js/2.3a65063f.chunk.js",
+    "static/js/2.3a65063f.chunk.js.map": "/openrpc-inspector-transport/static/js/2.3a65063f.chunk.js.map",
+    "index.html": "/openrpc-inspector-transport/index.html",
+    "precache-manifest.32ccc7f75a1bf25cbfa94254ebc26ef3.js": "/openrpc-inspector-transport/precache-manifest.32ccc7f75a1bf25cbfa94254ebc26ef3.js",
+    "service-worker.js": "/openrpc-inspector-transport/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8acb2dc8.js",
+    "static/js/2.3a65063f.chunk.js",
+    "static/js/main.f7606323.chunk.js"
+  ]
+}
