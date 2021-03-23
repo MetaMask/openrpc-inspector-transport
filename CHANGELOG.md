@@ -1,3 +1,10 @@
+# 1.0.0 (2021-03-23)
+
+
+### Features
+
+* Initial Commit ([969fe37](https://github.com/MetaMask/openrpc-inspector-transport/commit/969fe3718b0ef335a6bb8e839a14a944457aa570))
+
 # 1.0.0 (2020-03-27)
 
 
