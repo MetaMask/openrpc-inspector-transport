@@ -1,0 +1,47 @@
+{
+  "openrpc": "1.0.0",
+  "info": {
+    "title": "foo",
+    "version": "1.0.0"
+  },
+  "methods": [
+    {
+      "name": "connect",
+      "description": "connect to transport",
+      "summary": "connect transport",
+      "params": [
+        {
+          "name": "uri",
+          "description": "the uri to connect to",
+          "required": true,
+          "schema": {
+            "type": "string",
+            "pattern": "^wallet_plugin_http"
+          }
+        }
+      ],
+      "result": {
+        "name": "connected",
+        "description": "connected or not",
+        "schema": {
+          "type": "boolean"
+        }
+      }
+    },
+    {
+      "name": "sendData",
+      "description": "send data across the transport",
+      "params": [
+        {
+          "name": "data",
+          "description": "data to send",
+          "schema": true
+        }
+      ],
+      "result": {
+        "name": "result",
+        "schema": true
+      }
+    }
+  ]
+}

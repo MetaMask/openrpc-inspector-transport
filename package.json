@@ -1,0 +1,43 @@
+{
+  "name": "@metamask/openrpc-inspector-transport",
+  "version": "0.0.0-development",
+  "homepage": "https://metamask.github.io/openrpc-inspector-transport",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "npm run typings && react-scripts start",
+    "build": "npm run typings && react-scripts build",
+    "typings": "open-rpc-typings -d src/openrpc.json --output-ts src/__GENERATED_TYPES__/",
+    "lint": "tslint --fix -p .",
+    "test": "npm run typings && npm run lint && react-scripts test --coverage --passWithNoTests"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@open-rpc/typings": "^1.9.0",
+    "@types/jest": "^24.0.13",
+    "@types/react-dom": "^16.8.4",
+    "jest": "^24.9.0",
+    "react-scripts": "^3.4.4",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "typescript": "^3.9.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@open-rpc/client-js": "^1.2.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
