@@ -10,8 +10,7 @@ let internalID = 0;
 
 const connect: Connect = async (uri) => {
   transport = new MetaMaskTransport(uri);
-  await transport.connect();
-  return true;
+  return transport.connect();
 };
 
 const sendData: SendData = (data) => {
