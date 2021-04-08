@@ -9,23 +9,10 @@
       "name": "connect",
       "description": "connect to transport",
       "summary": "connect transport",
-      "params": [
-        {
-          "name": "uri",
-          "description": "the uri to connect to",
-          "required": true,
-          "schema": {
-            "type": "string",
-            "pattern": "^wallet_plugin_http"
-          }
-        }
-      ],
+      "params": [],
       "result": {
-        "name": "connected",
-        "description": "connected or not",
-        "schema": {
-          "type": "boolean"
-        }
+        "name": "successful",
+        "schema": true
       }
     },
     {

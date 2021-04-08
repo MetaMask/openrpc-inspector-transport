@@ -8,8 +8,8 @@ export interface IMethodMapping {
 let transport: MetaMaskTransport | undefined;
 let internalID = 0;
 
-const connect: Connect = async (uri) => {
-  transport = new MetaMaskTransport(uri);
+const connect: Connect = async () => {
+  transport = new MetaMaskTransport();
   return transport.connect();
 };
 
