@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/openrpc-inspector-transport/precache-manifest.32ccc7f75a1bf25cbfa94254ebc26ef3.js"
+  "/openrpc-inspector-transport/precache-manifest.8d6441ddbf963a6bc41928b46639501f.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0dc33f5d7cfec4ab39fa446465176afd",
+    "revision": "73b2fa23a90d628d36baf66c80e69ff8",
     "url": "/openrpc-inspector-transport/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/openrpc-inspector-transport/static/js/2.3a65063f.chunk.js"
   },
   {
-    "revision": "37f9f5fa6f8b0be33483",
-    "url": "/openrpc-inspector-transport/static/js/main.f7606323.chunk.js"
+    "revision": "dd897317725e77dab206",
+    "url": "/openrpc-inspector-transport/static/js/main.e15792df.chunk.js"
   },
   {
     "revision": "6fee0a6d7131be2e5e1b",
