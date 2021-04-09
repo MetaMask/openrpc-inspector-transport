@@ -24,18 +24,15 @@ interface ProviderMessage {
 }
 
 class MetaMaskTransport extends Transport {
-  public uri: string;
 
-  constructor(uri: string) {
-    super();
-    this.uri = uri;
-  }
-  public async connect(): Promise<any> {
-    const hasEthereum = (window as any).ethereum;
+  public async connect(): Promise<boolean> {
+    const hasEthereum = window.ethereum && window.ethereum.isMetaMask;
     if (hasEthereum) {
-      hasEthereum.on("message", this.notificationHandler);
+      window.ethereum?.on("message", this.notificationHandler);
+      return Boolean(hasEthereum);
+    } else {
+      throw new Error("No MetaMask Connection");
     }
-    return !!hasEthereum;
   }
 
   public async sendData(data: JSONRPCRequestData, timeout: number | undefined = 5000): Promise<any> {
