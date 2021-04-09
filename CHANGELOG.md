@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/MetaMask/openrpc-inspector-transport/compare/1.0.0...1.0.1) (2021-04-09)
+
+
+### Bug Fixes
+
+* use ethereum.isMetamask for connect ([d8681e5](https://github.com/MetaMask/openrpc-inspector-transport/commit/d8681e5b4056b615d00e967e45f3f9f93e5aafb7))
+* use transport connect ([f6c071d](https://github.com/MetaMask/openrpc-inspector-transport/commit/f6c071d8a2ff9281864b73818fe5b3f49ec15b9c))
+
 # 1.0.0 (2021-03-23)
 
 
