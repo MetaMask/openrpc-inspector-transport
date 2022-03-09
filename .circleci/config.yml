@@ -72,7 +72,6 @@ workflows:
           filters: *filter-only-semantic-pr
       - build:
           filters: *filter-only-semantic-pr
-
   release:
     jobs:
       - test:
