@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/openrpc-inspector-transport/static/js/main.e15792df.chunk.js",
-    "main.js.map": "/openrpc-inspector-transport/static/js/main.e15792df.chunk.js.map",
+    "main.js": "/openrpc-inspector-transport/static/js/main.ea47caac.chunk.js",
+    "main.js.map": "/openrpc-inspector-transport/static/js/main.ea47caac.chunk.js.map",
     "runtime-main.js": "/openrpc-inspector-transport/static/js/runtime-main.8acb2dc8.js",
     "runtime-main.js.map": "/openrpc-inspector-transport/static/js/runtime-main.8acb2dc8.js.map",
-    "static/js/2.3a65063f.chunk.js": "/openrpc-inspector-transport/static/js/2.3a65063f.chunk.js",
-    "static/js/2.3a65063f.chunk.js.map": "/openrpc-inspector-transport/static/js/2.3a65063f.chunk.js.map",
+    "static/js/2.cad2d7ee.chunk.js": "/openrpc-inspector-transport/static/js/2.cad2d7ee.chunk.js",
+    "static/js/2.cad2d7ee.chunk.js.map": "/openrpc-inspector-transport/static/js/2.cad2d7ee.chunk.js.map",
     "index.html": "/openrpc-inspector-transport/index.html",
-    "precache-manifest.8d6441ddbf963a6bc41928b46639501f.js": "/openrpc-inspector-transport/precache-manifest.8d6441ddbf963a6bc41928b46639501f.js",
+    "precache-manifest.dd07be8d3fbe53b828308e95f2352821.js": "/openrpc-inspector-transport/precache-manifest.dd07be8d3fbe53b828308e95f2352821.js",
     "service-worker.js": "/openrpc-inspector-transport/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.8acb2dc8.js",
-    "static/js/2.3a65063f.chunk.js",
-    "static/js/main.e15792df.chunk.js"
+    "static/js/2.cad2d7ee.chunk.js",
+    "static/js/main.ea47caac.chunk.js"
   ]
 }
