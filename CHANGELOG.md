@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/MetaMask/openrpc-inspector-transport/compare/1.0.1...1.0.2) (2022-03-09)
+
+
+### Bug Fixes
+
+* whitespace ([59ee691](https://github.com/MetaMask/openrpc-inspector-transport/commit/59ee69122e380a3ad7ff0c15bbdd01e736ecaaad))
+
 ## [1.0.1](https://github.com/MetaMask/openrpc-inspector-transport/compare/1.0.0...1.0.1) (2021-04-09)
 
 
