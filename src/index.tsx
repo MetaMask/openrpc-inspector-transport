@@ -1,9 +1,16 @@
 import openrpcDocument from "./openrpc.json";
 import methodMapping from "./methods/methodMapping";
+import {EthereumRpcError, serializeError} from "eth-rpc-errors";
 
 window.addEventListener("message", async (ev: MessageEvent) => {
+  if (!ev.data.jsonrpc) {
+    return;
+  }
+
+  const eventSource: Window = ev.source as Window;
+
   if (ev.data.method === "rpc.discover") {
-    (ev.source as any).postMessage({
+    eventSource.postMessage({
       jsonrpc: "2.0",
       result: openrpcDocument,
       id: ev.data.id,
@@ -11,7 +18,7 @@ window.addEventListener("message", async (ev: MessageEvent) => {
     return;
   }
   if (!methodMapping[ev.data.method]) {
-    window.parent.postMessage({
+    eventSource.postMessage({
       jsonrpc: "2.0",
       error: {
         code: 32009,
@@ -22,18 +29,15 @@ window.addEventListener("message", async (ev: MessageEvent) => {
     return;
   }
   methodMapping[ev.data.method](...ev.data.params, ev.origin).then((results: any) => {
-    window.parent.postMessage({
+    eventSource.postMessage({
       jsonrpc: "2.0",
       result: results,
       id: ev.data.id,
     }, ev.origin);
-  }).catch((e: Error) => {
-    (ev.source as any).postMessage({
+  }).catch((e: EthereumRpcError<any>) => {
+    eventSource.postMessage({
       jsonrpc: "2.0",
-      error: {
-        code: 32329,
-        message: e.message,
-      },
+      error: serializeError(e, { shouldIncludeStack: true }),
       id: ev.data.id,
     }, ev.origin);
   });
