@@ -6,3 +6,4 @@ docs
 dist
 /**/build
 src/__GENERATED_TYPES__/
+.git/
